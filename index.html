@@ -1,24 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Vaibhavi Fulsundar | Java Full Stack Developer</title>
 
-  <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skill</a>
-    <a href="#">Project/a>
-    <a href="#">Contact</a>
 
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Vaibhavi</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h1>Hi, I'm <span>Vaibhavi Fulsundar</span></h1>
+        <h5 id="typing"></h5>
+        <p>BSc IT Graduate | Java Full Stack Developer</p>
+        <a href="doc/Vaibhavi_Fulsundar_Java.pdf" download class="btn btn-main">
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+        <div class="social mt-4">
+          <a href="https://github.com/Vaibhavi-06" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vaibhavi-fulsundar-51a42634b" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img src="image/profile_pic.jpeg" class="profile-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container text-center" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I am a BSc IT graduate and aspiring Java Full Stack Developer with strong
+      knowledge of HTML, CSS, JavaScript, Bootstrap, Java, SQL, Python, and C.
+      I enjoy building responsive, user-friendly applications and continuously
+      improving my technical and problem-solving skills.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section bg-soft">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-3 col-6"><div class="box">HTML</div></div>
+      <div class="col-md-3 col-6"><div class="box">CSS</div></div>
+      <div class="col-md-3 col-6"><div class="box">JavaScript</div></div>
+      <div class="col-md-3 col-6"><div class="box">Bootstrap</div></div>
+      <div class="col-md-3 col-6"><div class="box">Java</div></div>
+      <div class="col-md-3 col-6"><div class="box">SQL / MySQL</div></div>
+      <div class="col-md-3 col-6"><div class="box">Python</div></div>
+      <div class="col-md-3 col-6"><div class="box">C</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="box project-box" data-bs-toggle="modal" data-bs-target="#p1">
+          EventHub – Event Management System
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box project-box" data-bs-toggle="modal" data-bs-target="#p2">
+          Gadwata Tourism Website
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box project-box" data-bs-toggle="modal" data-bs-target="#p3">
+          College Event Management (SQL)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT MODALS -->
+<div class="modal fade" id="p1"><div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content"><div class="modal-header">
+<h5>EventHub</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body">
+<ul>
+<li>Event listing & registration</li>
+<li>JavaScript validation</li>
+<li>Bootstrap responsive layout</li>
+</ul>
+</div></div></div></div>
+
+<div class="modal fade" id="p2"><div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content"><div class="modal-header">
+<h5>Gadwata Tourism Website</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body">
+<ul>
+<li>Fort & tourism info</li>
+<li>Image gallery</li>
+<li>Responsive design</li>
+</ul>
+</div></div></div></div>
+
+<div class="modal fade" id="p3"><div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content"><div class="modal-header">
+<h5>College Event Management (SQL)</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+<div class="modal-body">
+<ul>
+<li>Tables & joins</li>
+<li>Procedures & triggers</li>
+<li>Database normalization</li>
+</ul>
+</div></div></div></div>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section bg-soft">
+  <div class="container">
+    <h2 class="text-center">Certifications</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4"><div class="certificate-card">
+        <i class="fa fa-certificate"></i>
+        <h5>Java Full Stack Developer</h5><p>Pursuing</p></div></div>
+      <div class="col-md-4"><div class="certificate-card">
+        <i class="fa fa-database"></i>
+        <h5>Introduction to SQL</h5><p>Completed</p></div></div>
+      <div class="col-md-4"><div class="certificate-card">
+        <i class="fa fa-code"></i>
+        <h5>Web Development</h5><p>HTML, CSS, JS</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container text-center">
+    <h2>Education</h2>
+    <div class="edu-box box">BSc IT (2022–2025) – CGPA 9.02</div>
+    <div class="edu-box box">HSC – 67.33%</div>
+    <div class="edu-box box">SSC – 78.80%</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-soft">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <p><i class="fa fa-phone"></i> 7821925023 / 9561726088</p>
+    <p><i class="fa fa-envelope"></i> fulsundarvaibhavi1@gmail.com</p>
+    <p><i class="fa fa-location-dot"></i> Pimpri-Chinchwad, Pune</p>
+  </div>
+</section>
+
+<footer class="text-center py-3">
+  © 2026 Vaibhavi Fulsundar
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
