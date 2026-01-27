@@ -1,44 +1,104 @@
+/* ================= GENERAL ================= */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fffde7;
   color: #212121;
+  padding-top: 70px;
 }
 
-/* Navbar */
+a {
+  text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
 .navbar {
   background-color: #ffffff;
+}
+
+.navbar-brand {
+  font-size: 22px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #212121;
 }
 
 .nav-link:hover {
   color: #fbc02d;
 }
 
-/* Home */
-.home {
+/* ================= HERO SECTION ================= */
+.hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #fffde7;
 }
 
-.profile-img {
-  width: 180px;
-  height: 180px;
+.hero-img {
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Icons */
+.hero-text h1 {
+  font-size: 42px;
+}
+
+.highlight {
+  color: #fbc02d;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ================= TYPING EFFECT ================= */
+#typing {
+  color: #fbc02d;
+  font-weight: 600;
+  min-height: 40px;
+}
+
+#typing::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* ================= HERO BUTTONS ================= */
+.hero-text .btn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.btn-outline-warning {
+  border-width: 2px;
+}
+
+/* ================= SOCIAL ICONS ================= */
 .hero-icons a {
-  font-size: 26px;
-  margin: 0 10px;
+  font-size: 24px;
+  margin-right: 15px;
   color: #212121;
+  transition: 0.3s;
 }
 
 .hero-icons a:hover {
   color: #fbc02d;
 }
 
-/* Section */
+/* ================= SECTIONS ================= */
 .section {
   padding: 80px 0;
 }
@@ -46,6 +106,7 @@ body {
 .section-title {
   text-align: center;
   font-weight: bold;
+  font-size: 32px;
 }
 
 .section-line {
@@ -55,65 +116,84 @@ body {
   margin: 10px auto 30px;
 }
 
-/* About */
-.about-text {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  color: #555;
-}
-
-/* Skills */
-.skill-card {
-  background: #ffffff;
+/* ================= COMMON BOX ================= */
+.box {
+  background-color: #ffffff;
   padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
   transition: 0.4s;
 }
 
-.skill-card:hover {
+.box:hover {
   transform: translateY(-8px);
 }
 
-/* Education */
-.edu-card {
-  background: #ffffff;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+/* ================= CERTIFICATION IMAGE ================= */
+.box img {
+  max-height: 180px;
+  object-fit: cover;
 }
 
-/* Certifications */
-.cert-card {
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-.cert-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Contact */
-.contact-info i {
-  color: #fbc02d;
-  margin-right: 10px;
+/* ================= CONTACT SECTION ================= */
+.contact-section {
+  padding: 80px 0;
+  background-color: #fffde7;
 }
 
 .contact-box {
-  background: #ffffff;
+  background-color: #ffffff;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  height: 100%;
 }
 
-/* Footer */
+.contact-box p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.contact-box i {
+  color: #0d6efd;
+  margin-right: 8px;
+}
+
+/* ================= FORM ================= */
+.form-control {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+.btn-primary {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
 footer {
-  background: #ffffff;
-  color: #555;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-bottom: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
 }
