@@ -60,7 +60,7 @@
 
         <div class="mt-4">
           <a href="#contact" class="btn btn-warning me-3">Contact Me</a>
-          <a href="doc/Vaibhavi_Fulsundar_Java.docx"
+          <a href="doc/Vaibhavi_Fulsundar_Java.docx" alt="Resume"
              class="btn btn-outline-warning"
              download>
             <i class="bi bi-download"></i> Download Resume
@@ -77,37 +77,50 @@
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section">
-  <div class="container text-center">
-    <h2 class="section-title">About Me</h2>
-    <div class="section-line"></div>
-    <p>
-      I am a BSc Information Technology graduate with strong knowledge of
-      Java Full Stack Development. I enjoy creating responsive and
-      user-friendly web applications and continuously improving my skills.
-    </p>
-  </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="section">
+<!-- ================= ABOUT & SKILLS ================= -->
+<section class="section">
   <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="section-line"></div>
+    <div class="row align-items-start">
 
-    <div class="row g-4 text-center">
-      <div class="col-md-3 col-6"><div class="box">HTML</div></div>
-      <div class="col-md-3 col-6"><div class="box">CSS</div></div>
-      <div class="col-md-3 col-6"><div class="box">JavaScript</div></div>
-      <div class="col-md-3 col-6"><div class="box">Bootstrap</div></div>
-      <div class="col-md-3 col-6"><div class="box">Java</div></div>
-      <div class="col-md-3 col-6"><div class="box">SQL</div></div>
-      <div class="col-md-3 col-6"><div class="box">Python</div></div>
-      <div class="col-md-3 col-6"><div class="box">C</div></div>
+      <!-- ================= ABOUT (6 columns) ================= -->
+      <div class="col-md-6 mb-4">
+        <h2 class="section-title text-start">About Me</h2>
+        <div class="section-line ms-0"></div>
+
+        <p>
+          I am a <strong>BSc Information Technology graduate</strong> with strong
+          knowledge of <strong>Java Full Stack Development</strong>.
+          I enjoy creating responsive and user-friendly web applications and
+          continuously improving my technical skills.
+        </p>
+
+        <p>
+          I have hands-on experience with frontend and backend technologies
+          and I am eager to contribute to real-world projects.
+        </p>
+      </div>
+
+      <!-- ================= SKILLS (6 columns) ================= -->
+      <div class="col-md-6">
+        <h2 class="section-title text-start">Skills</h2>
+        <div class="section-line ms-0"></div>
+
+        <div class="row g-3 text-center">
+          <div class="col-6"><div class="box">HTML</div></div>
+          <div class="col-6"><div class="box">CSS</div></div>
+          <div class="col-6"><div class="box">JavaScript</div></div>
+          <div class="col-6"><div class="box">Bootstrap</div></div>
+          <div class="col-6"><div class="box">Java</div></div>
+          <div class="col-6"><div class="box">SQL</div></div>
+          <div class="col-6"><div class="box">Python</div></div>
+          <div class="col-6"><div class="box">C</div></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="section">
@@ -201,7 +214,9 @@
     <div class="section-line mx-auto"></div>
 
     <div class="row mt-5">
-      <div class="col-md-6">
+
+      <!-- LEFT SIDE : CONTACT INFO -->
+      <div class="col-md-6 mb-4">
         <div class="contact-box">
           <p><i class="bi bi-person"></i> Vaibhavi Fulsundar</p>
           <p><i class="bi bi-telephone"></i> +91 7821925023</p>
@@ -210,19 +225,58 @@
         </div>
       </div>
 
+      <!-- RIGHT SIDE : CONTACT FORM -->
       <div class="col-md-6">
         <div class="contact-box">
           <form>
-            <input class="form-control mb-3" placeholder="Your Name" required>
-            <input class="form-control mb-3" type="email" placeholder="Email" required>
-            <textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
-            <button class="btn btn-primary w-100">Send Message</button>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First Name"
+                  required>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last Name"
+                  required>
+              </div>
+            </div>
+
+            <input
+              type="email"
+              class="form-control mb-3"
+              placeholder="Email Address"
+              required>
+
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Subject"
+              required>
+
+            <textarea
+              class="form-control mb-3"
+              rows="4"
+              placeholder="Your Message"
+              required></textarea>
+
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 <footer class="text-center py-3">
   © 2026 Vaibhavi Fulsundar
